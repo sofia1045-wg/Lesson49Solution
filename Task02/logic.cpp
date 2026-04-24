@@ -8,22 +8,6 @@
 // Если пользователь передаёт в функцию неверные данные, то функция
 // должна возвратить -1.
 
+#include "logich.h"
 
-#include <iostream>
-
-int count_zero_elements(int array[], int size) {
-	if (size <= 0) {
-		return -1;
-	}
-
-	int negative_number_sum = 0;
-
-	for (int i = 0; i < size; i++)
-	{
-		if (array[i] == 0) {
-			negative_number_sum++;
-		}
-	}
-
-	return negative_number_sum;
-}
+int count_of_negative_element(int array[], int size[]);
